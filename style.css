@@ -1,0 +1,159 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Страница авторизации */
+.auth-page {
+    background-color: #b0b0b0;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-box {
+    background-color: #2c2f33;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.auth-box h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.discord-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5865F2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.discord-login-btn:hover {
+    background-color: #4752c4;
+}
+
+.discord-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Страница dashboard */
+.dashboard-page {
+    background-color: #d3d3d3;
+    padding: 20px;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.suggestion-box, .form-box {
+    background-color: #2c2f33;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.suggestion-box h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box label {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.form-input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #40444b;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-input:hover, .form-input:focus {
+    border-color: #FFA500;
+    background-color: #4a4e55;
+    outline: none;
+}
+
+.large-input {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #CC8400;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:not(:disabled):hover {
+    background-color: #FFA500;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .auth-box {
+        padding: 20px;
+        width: 90%;
+    }
+    
+    .auth-box h1 {
+        font-size: 1.5rem;
+    }
+    
+    .suggestion-box h2 {
+        font-size: 1.4rem;
+    }
+    
+    .form-box label {
+        font-size: 1rem;
+    }
+}
